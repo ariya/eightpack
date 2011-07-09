@@ -21,3 +21,5 @@ endif()
 
 add_subdirectory(lib)
 set(EIGHTPACK_PATH ${PROJECT_SOURCE_DIR}/lib)
+
+add_subdirectory(jslint)
