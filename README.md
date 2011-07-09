@@ -6,6 +6,23 @@ as the scripting engine.
 
 EightPack is still in the preparation. It will be ready soon!
 
+## Tools ##
+
+### JSLint ###
+
+[JSLint](http://jslint.com) is the famous code static analysis tool from
+Douglas Crockford.
+
+The command-line version inside EightPack current uses JSLint edition
+2011-07-04.
+
+To see the usage and the list of all supported options, run:
+
+    jslint --help
+
+For more detailed information, please refer the offical [JSLint
+documentation](http://www.jslint.com/lint.html#options).
+
 ## Build instructions ##
 
 Building EightPack is as easy as:
