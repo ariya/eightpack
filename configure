@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo "Configuring EightPack..."
+
+CMAKE=$(command -v cmake)
+
+if [ -z "$CMAKE" ]; then
+  ABSPATH="$( cd "$( dirname "$0" )" && pwd )"
+  CMAKE=$ABSPATH/bin/cmake
+  if [ ! -f $CMAKE ]; then
+    echo "Building CMake..."
+    CMAKE_VERSION=cmake-2.8.4
+    CMAKE_TARBALL=$CMAKE_VERSION.tar.gz
+    CMAKE_URL=http://www.cmake.org/files/v2.8/$CMAKE_TARBALL
+    [ -d cmake ] || mkdir cmake
+    cd cmake
+    [ -f $CMAKE_TARBALL ] || curl -C - -O -S $CMAKE_URL
+    tar xf $CMAKE_TARBALL
+    cd $CMAKE_VERSION
+    ./bootstrap --prefix=$ABSPATH
+    make && make install
+    echo "Local CMake is installed to $ABSPATH."
+    cd .. && cd .. && echo "CMake build is completed."
+  fi
+fi
+
+$CMAKE .
+echo "Configuration is done."
