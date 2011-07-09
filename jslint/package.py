@@ -3,6 +3,7 @@ import textwrap;
 if __name__ == '__main__':
     files = [
       'jslint.js',
+      'Settings.js',
       'CommandLine.js'
     ]
     body = []
