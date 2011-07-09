@@ -25,6 +25,8 @@
 #include <fstream>
 #include <iostream>
 
+#include <stdlib.h>
+
 using namespace v8;
 
 static Handle<Value> system_exit(const Arguments& args)
