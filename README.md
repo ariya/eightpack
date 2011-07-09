@@ -4,7 +4,6 @@ EightPack is a collection of command-line tools for web site and
 application developers. It uses [Google V8](http://code.google.com/p/v8/)
 as the scripting engine.
 
-EightPack is still in the preparation. It will be ready soon!
 
 ## Tools ##
 
@@ -22,6 +21,21 @@ To see the usage and the list of all supported options, run:
 
 For more detailed information, please refer the offical [JSLint
 documentation](http://www.jslint.com/lint.html#options).
+
+### JSHint ###
+
+[JSHint](http://jshint.com) is a community-driven tool to detect errors and
+potential problems in JavaScript code. It is a fork of JSLint.
+
+The command-line version inside EightPack current uses JSLint edition
+2011-04-16.
+
+To see the usage and the list of all supported options, run:
+
+    jshint --help
+
+For more detailed information, please refer the offical [JSHint
+documentation](http://jshint.com/#docs).
 
 ## Build instructions ##
 
@@ -69,3 +83,4 @@ under other licenses and/or has source available from other locations.
 
 * [V8](http://v8.googlecode.com), BSD License (see [its terms and conditions](http://code.google.com/apis/v8/terms.html))
 * [JSLint](http://jslint.com), modified MIT License (see [jslint.js](https://github.com/douglascrockford/JSLint/blob/master/jslint.js))
+* [JSHint](http://jshint.com), modified MIT License (see [jshint.js](https://github.com/jshint/jshint/blob/master/jshint.jsh))
