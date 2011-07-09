@@ -113,7 +113,7 @@ void eightpack_run(int argc, char* argv[], const char* cmd)
 
     Handle<Script> script = Script::Compile(code);
     if (script.IsEmpty()) {
-        std::cerr << "Error: unable to JSLINT JavaScript code " << std::endl;
+        std::cerr << "Error: unable to bootstrap!" << std::endl;
     } else {
         script->Run();
     }
