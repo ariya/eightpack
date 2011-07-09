@@ -61,3 +61,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+### Included Software and Licenses ###
+
+The following third party software is distributed with EightPack and is provided
+under other licenses and/or has source available from other locations.
+
+* [V8](http://v8.googlecode.com), BSD License (see [its terms and conditions](http://code.google.com/apis/v8/terms.html))
+* [JSLint](http://jslint.com), modified MIT License (see [jslint.js](https://github.com/douglascrockford/JSLint/blob/master/jslint.js))
