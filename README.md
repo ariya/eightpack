@@ -49,6 +49,17 @@ To see the usage and the list of all supported options, run:
 
     jsbeautify --help
 
+### CSS Beautify ###
+
+[CSS Beautify](http://senchalabs.github.com/cssbeautify/) is a tool to reindent
+and reformat styles written in CSS.
+
+The command-line version inside EightPack currently uses CSS Beautify
+from revision d4fedf02 (dated 2011-07-01).
+
+To see the usage and the list of all supported options, run:
+
+    cssbeautify --help
 
 ## Build instructions ##
 
@@ -98,3 +109,4 @@ under other licenses and/or has source available from other locations.
 * [JSLint](http://jslint.com), modified MIT License (see [jslint.js](https://github.com/douglascrockford/JSLint/blob/master/jslint.js))
 * [JSHint](http://jshint.com), modified MIT License (see [jshint.js](https://github.com/jshint/jshint/blob/master/jshint.jsh))
 * [JSBeautifier](http://jsbeautifier.org), MIT License (see [license.txt](https://github.com/einars/js-beautify/blob/master/license.txt))
+* [CSS Beautify](http://senchalabs.github.com/cssbeautify/), MIT License (see [README](https://github.com/senchalabs/cssbeautify/blob/master/README.md))

@@ -25,3 +25,5 @@ set(EIGHTPACK_PATH ${PROJECT_SOURCE_DIR}/lib)
 add_subdirectory(jslint)
 add_subdirectory(jshint)
 add_subdirectory(jsbeautify)
+
+add_subdirectory(cssbeautify)
