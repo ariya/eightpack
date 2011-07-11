@@ -1,11 +1,11 @@
 # EightPack #
 
-EightPack is a collection of command-line tools for web site and
-application developers. It uses [Google V8](http://code.google.com/p/v8/)
+EightPack is a collection of JavaScript-based command-line tools for web
+developers. It uses [Google V8](http://code.google.com/p/v8/)
 as the scripting engine.
 
-
-## Tools ##
+As of now, EightPack consists of the following tools: JSLint, JSHint, JS
+Beautifier, and CSS Beautify.
 
 ### JSLint ###
 
