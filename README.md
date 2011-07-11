@@ -5,7 +5,7 @@ developers. It uses [Google V8](http://code.google.com/p/v8/)
 as the scripting engine.
 
 As of now, EightPack consists of the following tools: JSLint, JSHint, JS
-Beautifier, and CSS Beautify.
+Beautifier, CSS Beautify, and cssmin.js.
 
 ### JSLint ###
 
@@ -61,6 +61,19 @@ To see the usage and the list of all supported options, run:
 
     cssbeautify --help
 
+### cssmin.js ###
+
+[cssmin.js](http://www.phpied.com/cssmin-js/) is a JavaScript port of
+YUICompressor's CSS minifier. It is useful to reduce the size of CSS
+files.
+
+The command-line version inside EightPack currently uses cssmin.js from
+YUI Compressor 2.4.6 (dated 2011-04-15).
+
+To see the usage and the list of all supported options, run:
+
+    cssmin --help
+
 ## Build instructions ##
 
 Building EightPack is as easy as:
@@ -110,3 +123,4 @@ under other licenses and/or has source available from other locations.
 * [JSHint](http://jshint.com), modified MIT License (see [jshint.js](https://github.com/jshint/jshint/blob/master/jshint.jsh))
 * [JSBeautifier](http://jsbeautifier.org), MIT License (see [license.txt](https://github.com/einars/js-beautify/blob/master/license.txt))
 * [CSS Beautify](http://senchalabs.github.com/cssbeautify/), MIT License (see [README](https://github.com/senchalabs/cssbeautify/blob/master/README.md))
+* [cssmin.js](http://www.phpied.com/cssmin-js/), BSD License (see [cssmin.js](https://github.com/yui/yuicompressor/blob/master/ports/js/cssmin.js))

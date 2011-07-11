@@ -27,3 +27,4 @@ add_subdirectory(jshint)
 add_subdirectory(jsbeautify)
 
 add_subdirectory(cssbeautify)
+add_subdirectory(cssmin)
