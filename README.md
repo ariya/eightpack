@@ -74,29 +74,57 @@ To see the usage and the list of all supported options, run:
 
     cssmin --help
 
-## Build instructions ##
-
-Building EightPack is as easy as:
-
-    ./configure
-    make
+## Build Instructions ##
 
 Tip: when using multicore CPU, speed up the build with parallel jobs, e.g:
 
     make -j4
 
-To install the executable (with the target directory <code>/usr/local/bin</code>):
+### Mac OS ###
+
+Requirement: development tools, i.e. by installing [Xcode 3.2 or
+later](http://developer.apple.com/tools/xcode/).
+
+From the Terminal application, run:
+
+    ./configure
+    make
+
+To install the executables (with the target directory <code>/usr/local/bin</code>):
+
+    make install
+
+Alternatively copy the executables to some directory in the PATH.
+
+### Linux ###
+
+Requirement: C++ compiler and the corresponding libraries (e.g.
+<code>build-essential</code> package on Ubuntu,
+<code>gcc-g++</code> and <code>make</code> packages on OpenSUSE).
+
+From the terminal, run:
+
+    ./configure
+    make
+
+To install the executables (with the target directory <code>/usr/local/bin</code>):
 
     make install
 
 Alternatively copy the binaries or executables to some directory in the PATH.
 
-**Windows**: [CMake](http://www.cmake.org/cmake/resources/software.html) and
-[MinGW](http://mingw.org) are required. CMake version 2.6 and
-mingw32-g++ 4.4 are known to work. The build steps are:
+### Windows ###
+
+Requirement: [CMake](http://www.cmake.org/cmake/resources/software.html)
+version 2.6 or later and [MinGW](http://mingw.org) with g++ 4.4 or later.
+
+From the command-line, run:
 
     cmake -G "MinGW Makefiles" .
     mingw32-make
+
+To install the executables, copy all EXE files into a directory in the
+PATH.
 
 ## License ##
 
