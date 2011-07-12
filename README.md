@@ -91,6 +91,13 @@ To install the executable (with the target directory <code>/usr/local/bin</code>
 
 Alternatively copy the binaries or executables to some directory in the PATH.
 
+**Windows**: [CMake](http://www.cmake.org/cmake/resources/software.html) and
+[MinGW](http://mingw.org) are required. CMake version 2.6 and
+mingw32-g++ 4.4 are known to work. The build steps are:
+
+    cmake -G "MinGW Makefiles" .
+    mingw32-make
+
 ## License ##
 
 Copyright (C) 2011 Ariya Hidayat.
