@@ -129,6 +129,19 @@ From the command-line, run:
 To install the executables, copy all EXE files into a directory in the
 PATH.
 
+## Mini FAQ ##
+
+**Q: How does this differ than Node.JS package or Rhino-based wrapper?**
+
+A: EightPack tools are self-contained, they do not have any run-time
+dependencies (beside the libraries provided by the platform).
+With <code>strip</code> and
+[UPX](http://upx.sf.net), the Windows executable only weighs at 920 KB.
+
+Every tool is a native application on three major desktop operating systems.
+The Windows version does not rely on Cygwin or other emulation layers.
+No OS is a second-class citizen.
+
 ## License ##
 
 Copyright (C) 2011 Ariya Hidayat.
