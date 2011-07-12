@@ -15,3 +15,7 @@ endif()
 
 set_target_properties(eightpack PROPERTIES COMPILE_FLAGS ${EIGHTPACK_ARCH_FLAGS}
     LINK_FLAGS ${EIGHTPACK_ARCH_FLAGS})
+
+if(MINGW)
+    set_target_properties(eightpack PROPERTIES LINK_FLAGS "-static-libgcc -static-libstdc++")
+endif()
