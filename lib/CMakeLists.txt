@@ -9,5 +9,9 @@ if(UNIX)
     target_link_libraries(eightpack pthread)
 endif()
 
+if(WIN32)
+    target_link_libraries(eightpack ws2_32 winmm)
+endif()
+
 set_target_properties(eightpack PROPERTIES COMPILE_FLAGS ${EIGHTPACK_ARCH_FLAGS}
     LINK_FLAGS ${EIGHTPACK_ARCH_FLAGS})
