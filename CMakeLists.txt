@@ -23,7 +23,7 @@ endif()
 
 # Static linking to have no run-time dependency
 if(MINGW)
-    set(EIGHTPACK_LINK_FLAGS "$EIGHTPACK_LINK_FLAGS -static-libgcc -static-libstdc++")
+    set(EIGHTPACK_LINK_FLAGS "${EIGHTPACK_LINK_FLAGS} -static-libgcc -static-libstdc++")
 endif()
 
 add_subdirectory(lib)
