@@ -19,6 +19,11 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -mmacosx-version-min=10.5")
 endif()
 
+# Static linking to have no run-time dependency
+if(MINGW)
+    set(EIGHTPACK_ARCH_FLAGS "$EIGHTPACK_ARCH_FLAGS -static-libgcc -static-libstdc++")
+endif()
+
 add_subdirectory(lib)
 set(EIGHTPACK_PATH ${PROJECT_SOURCE_DIR}/lib)
 
