@@ -13,5 +13,5 @@ if(WIN32)
     target_link_libraries(eightpack ws2_32 winmm)
 endif()
 
-set_target_properties(eightpack PROPERTIES COMPILE_FLAGS ${EIGHTPACK_ARCH_FLAGS}
-    LINK_FLAGS ${EIGHTPACK_ARCH_FLAGS})
+set_target_properties(eightpack PROPERTIES COMPILE_FLAGS ${EIGHTPACK_COMPILE_FLAGS})
+set_target_properties(eightpack PROPERTIES LINK_FLAGS ${EIGHTPACK_LINK_FLAGS})

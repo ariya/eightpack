@@ -5,10 +5,12 @@ cmake_minimum_required(VERSION 2.6)
 # For now, assume x64 on Mac OS X and ia32 elsewhere.
 if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     set(EIGHTPACK_ARCH "x64")
-    set(EIGHTPACK_ARCH_FLAGS "-m64")
+    set(EIGHTPACK_COMPILE_FLAGS "-m64")
+    set(EIGHTPACK_LINK_FLAGS "-m64")
 else()
     set(EIGHTPACK_ARCH "ia32")
-    set(EIGHTPACK_ARCH_FLAGS "-m32")
+    set(EIGHTPACK_COMPILE_FLAGS "-m32")
+    set(EIGHTPACK_LINK_FLAGS "-m32")
 endif()
 
 # Target Mac OS X 10.5 so that it works both on Leopard and Snow Leopard.
@@ -21,7 +23,7 @@ endif()
 
 # Static linking to have no run-time dependency
 if(MINGW)
-    set(EIGHTPACK_ARCH_FLAGS "$EIGHTPACK_ARCH_FLAGS -static-libgcc -static-libstdc++")
+    set(EIGHTPACK_LINK_FLAGS "$EIGHTPACK_LINK_FLAGS -static-libgcc -static-libstdc++")
 endif()
 
 add_subdirectory(lib)
