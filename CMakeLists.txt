@@ -1,9 +1,7 @@
 project(EightPack)
 cmake_minimum_required(VERSION 2.6)
 
-# TODO Detect the architecture properly.
-# For now, assume x64 on Mac OS X and ia32 elsewhere.
-if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+if(CMAKE_SIZEOF_VOID_P EQUAL 8)
     set(EIGHTPACK_ARCH "x64")
     set(EIGHTPACK_COMPILE_FLAGS "-m64")
     set(EIGHTPACK_LINK_FLAGS "-m64")
