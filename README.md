@@ -18,12 +18,18 @@ Douglas Crockford.
 The command-line version inside EightPack currently uses JSLint edition
 2011-07-04.
 
+[JSLint customization options](http://www.jslint.com/lint.html#options)
+are supported via the command-line arguments. Example:
+
+    jslint --eqeq=true --continue=false --maxerr=100
+
+which would tolerate <code>==</code> and <code>!=</code> but would not
+tolerate the use of <code>continue</code> statement and stop after
+encountering 100 errors.
+
 To see the usage and the list of all supported options, run:
 
     jslint --help
-
-For more detailed information, please refer the offical [JSLint
-documentation](http://www.jslint.com/lint.html#options).
 
 ### JSHint ###
 
@@ -33,12 +39,20 @@ potential problems in JavaScript code. It is a fork of JSLint.
 The command-line version inside EightPack currently uses JSLint edition
 2011-04-16.
 
+[JSHint customization options](http://jshint.com/#docs) are supported
+via the command-line arguments. Example:
+
+    jshint --white=true --rhino=true --maxerr=42
+
+which would enforce whitespace rules, define Rhino
+environment globals, and stop after encountering 42 errors.
+
 To see the usage and the list of all supported options, run:
 
     jshint --help
 
-For more detailed information, please refer the offical [JSHint
-documentation](http://jshint.com/#docs).
+Note: The same command-line argument for JSLint may result in different
+behavior with JSHint, check the documentation for details.
 
 ### JSBeautifier ###
 
