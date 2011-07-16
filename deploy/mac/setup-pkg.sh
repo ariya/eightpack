@@ -1,5 +1,13 @@
 #!/bin/sh
 
+UPX=$(command -v upx)
+if [ -z "$UPX" ]; then
+    echo "Error: UPX is needed, please install it via MacPorts."
+    exit 1
+fi
+
+echo "Creating PackageRoot..."
+
 rm -rf PackageRoot
 mkdir PackageRoot
 cd PackageRoot
@@ -18,10 +26,10 @@ cp ../../../../../jsbeautify/jsbeautify .
 cp ../../../../../cssbeautify/cssbeautify .
 cp ../../../../../cssmin/cssmin .
 
-strip jslint && upx -9 jslint
-strip jshint && upx -9 jshint
-strip jsbeautify && upx -9 jsbeautify
-strip cssbeautify && upx -9 cssbeautify
-strip cssmin && upx -9 cssmin
+strip jslint && $UPX -9 jslint
+strip jshint && $UPX -9 jshint
+strip jsbeautify && $UPX -9 jsbeautify
+strip cssbeautify && $UPX -9 cssbeautify
+strip cssmin && $UPX -9 cssmin
 
 cd ../../../
