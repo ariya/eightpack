@@ -94,8 +94,7 @@ To see the usage and the list of all supported options, run:
 ## Build Instructions ##
 
 Tip: when using multicore CPU, speed up the build with parallel jobs, e.g:
-
-    make -j4
+<code>make -j4</code>.
 
 ### Mac OS ###
 
