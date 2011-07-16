@@ -1,0 +1,41 @@
+Run the script setup-pkg.sh first.
+
+Launch PackageMaker.
+
+If PackageMaker displays the "Install Properties" dialog box, fill it:
+
+  Organization: ofilabs.com
+  Minimum Target: Mac OS X v10.5 Leopard
+
+Go to the Configuration tab and fill it:
+
+  Title: EightPack Alpha1
+  User Sees: Easy Install Only
+  Destination: check only "User home directory"
+
+Click "Edit Interface" button and customize the step-by-step wizard
+as necessary.
+
+Open PackageRoot subdirectory (from this directory) in Finder. Drag and
+drop it into the Contents panel of PackageMaker.
+
+Choose the PackageRoot/ entry, go to Contents tab. Expand the tree view of
+the listed file.
+
+Select All, and then (bottom right) change Owner to root and Group to wheel.
+
+Go to Configuration tab and fill it:
+
+    Package Identifier: EightPack.Alpha1.pkg
+    Package Version: Alpha1
+    Restart Action: None
+    uncheck "Require admin authentication"
+
+Go to Scripts tab, choose PackageRoot/eightpack/scripts/update-path.sh as the
+Postinstall.
+
+The project is ready. "Build and Run" will prepare the package and run it.
+
+Note: there will be "Require Admin Authorization" warning, this can be ignored
+since intentionally no admin authorization is needed (the target install
+directory is the user's home directory).
