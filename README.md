@@ -133,14 +133,10 @@ PATH.
 
 **Q: How does this differ than Node.JS package or Rhino-based wrapper?**
 
-A: EightPack tools are self-contained, they do not have any run-time
-dependencies (beside the libraries provided by the platform).
-With <code>strip</code> and
-[UPX](http://upx.sf.net), the Windows executable only weighs at 920 KB.
-
-Every tool is a native application on three major desktop operating systems.
-The Windows version does not rely on Cygwin or other emulation layers.
-No OS is a second-class citizen.
+A: Each EightPack's tool is a *self-contained, native application*. It
+does **not** have any run-time dependencies (beside the libraries provided by
+the operating system). With <code>strip</code> and [UPX](http://upx.sf.net),
+the executable generally weighs slightly less < 1 MB.
 
 ## License ##
 
