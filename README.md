@@ -149,7 +149,7 @@ PATH.
 A: Each EightPack's tool is a *self-contained, native application*. It
 does **not** have any run-time dependencies (beside the libraries provided by
 the operating system). With <code>strip</code> and [UPX](http://upx.sf.net),
-the executable generally weighs slightly less < 1 MB.
+the executable generally weighs around 1 MB.
 
 ## License ##
 
