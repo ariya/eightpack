@@ -6,6 +6,10 @@ cd PackageRoot
 mkdir eightpack
 cd eightpack
 
+mkdir scripts
+cp ../../update-path.sh scripts/
+chmod +x scripts/update-path.sh
+
 mkdir bin
 cd bin
 cp ../../../../../jslint/jslint .
