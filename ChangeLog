@@ -1,0 +1,11 @@
+2011-07-21: Version Alpha1.
+
+    Alpha1 is the initial experimental release.
+
+    Included tools in this release:
+
+      * JSLint edition 2011-07-04
+      * JSHint edition 2011-04-16
+      * JSBeautifier revision 5d37b7e9 (dated 2011-06-27)
+      * CSS Beautify revision d4fedf02 (dated 2011-07-01)
+      * cssmin from YUI Compressor 2.4.6 (dated 2011-04-15)
