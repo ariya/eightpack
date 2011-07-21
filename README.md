@@ -4,7 +4,10 @@ EightPack is a collection of JavaScript-based command-line tools for web
 developers. It uses [Google V8](http://code.google.com/p/v8/)
 as the scripting engine.
 
-It is available on all major desktop platforms (Windows, Mac OS X, Linux).
+EightPack can be built on all major desktop platforms (Windows, Mac OS X,
+Linux). Binaries are
+[available](https://github.com/ariya/eightpack/downloads) for Windows
+and Mac OS X.
 
 As of now, EightPack consists of the following tools: JSLint, JSHint, JS
 Beautifier, CSS Beautify, and cssmin.js.
