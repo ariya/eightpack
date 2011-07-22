@@ -39,7 +39,7 @@ To see the usage and the list of all supported options, run:
 [JSHint](http://jshint.com) is a community-driven tool to detect errors and
 potential problems in JavaScript code. It is a fork of JSLint.
 
-The command-line version inside EightPack currently uses JSLint edition
+The command-line version inside EightPack currently uses JSHint edition
 2011-04-16.
 
 [JSHint customization options](http://jshint.com/#docs) are supported
