@@ -19,7 +19,7 @@ Beautifier, CSS Beautify, and cssmin.js.
 Douglas Crockford.
 
 The command-line version inside EightPack currently uses JSLint edition
-2011-07-04.
+2011-07-19.
 
 [JSLint customization options](http://www.jslint.com/lint.html#options)
 are supported via the command-line arguments. Example:
