@@ -63,7 +63,7 @@ behavior with JSHint, check the documentation for details.
 to format and indent JavaScript code.
 
 The command-line version inside EightPack currently uses JSBeautifier
-from revision 5d37b7e9 (dated 2011-06-27).
+from revision 56e232de (dated 2011-07-15).
 
 To see the usage and the list of all supported options, run:
 
