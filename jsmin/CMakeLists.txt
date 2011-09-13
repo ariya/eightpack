@@ -1,0 +1,6 @@
+add_executable(jsmin jsmin.cpp)
+link_directories(${EIGHTPACK_PATH})
+target_link_libraries(jsmin eightpack)
+set_target_properties(jsmin PROPERTIES COMPILE_FLAGS ${EIGHTPACK_COMPILE_FLAGS})
+set_target_properties(jsmin PROPERTIES LINK_FLAGS ${EIGHTPACK_LINK_FLAGS})
+install(TARGETS jsmin DESTINATION bin)
