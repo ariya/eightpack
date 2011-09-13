@@ -36,7 +36,7 @@ system.args.forEach(function (arg) {
 
             if (option === 'version') {
                 console.log('cssmin.js from YUICompressor 2.4.6.');
-                help();
+                system.exit(-1);
             }
 
             console.log('Unknown option: --' + option);
