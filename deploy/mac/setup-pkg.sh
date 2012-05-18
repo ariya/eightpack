@@ -23,12 +23,14 @@ cd bin
 cp ../../../../../jslint/jslint .
 cp ../../../../../jshint/jshint .
 cp ../../../../../jsbeautify/jsbeautify .
+cp ../../../../../jsmin/jsmin .
 cp ../../../../../cssbeautify/cssbeautify .
 cp ../../../../../cssmin/cssmin .
 
 strip jslint && $UPX -9 jslint
 strip jshint && $UPX -9 jshint
 strip jsbeautify && $UPX -9 jsbeautify
+strip jsmin && $UPX -9 jsmin
 strip cssbeautify && $UPX -9 cssbeautify
 strip cssmin && $UPX -9 cssmin
 
